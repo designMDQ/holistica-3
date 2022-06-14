@@ -1,0 +1,276 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    color: cornflowerblue;
+    
+}
+.separador{
+    width: 83%;
+    margin: auto;
+}
+
+.fa-facebook-f{
+    font-size: 30px;
+}
+
+/*---CARRUSEL---*/
+.carousel{
+    margin: 0;
+}
+
+
+/*---QUIEN SOY---*/
+
+.quien-soy{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,190,212,1) 0%, rgba(180,229,238,1) 17%);
+}
+.nora{
+    margin-top:-15px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+     
+}
+
+/*---TERAPIAS---*/
+
+.flix-box{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flix-box-front,
+.flix-box-back{
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    min-height: 475px;
+    transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    backface-visibility: hidden;
+}
+
+.flix-box-front{
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+}
+
+.flix-box:hover .flix-box-front{
+    transform: rotateX(-180deg);
+    transform-style: preserve-3d;
+}
+
+.flix-box-back{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    transform: rotateX(180deg);
+    transform-style: preserve-3d;  
+}
+
+.flix-box:hover .flix-box-back{
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+}
+
+.flix-box .inner{
+    position: absolute;
+    left:0;
+    width: 100%;
+    padding: 60px;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+}
+
+
+.flix-box-button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 25px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+/*---TESTIMONIOS---*/
+
+.contenedor{
+ 
+    width:100%;
+    height:500px;
+    overflow: hidden;
+    margin: auto;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,71,121,1) 17%, rgba(0,212,255,1) 100%);
+ 
+}
+.slider-contenedor{
+    display: flex;
+    margin-top: -40px;
+    height: 60%;
+    width: 100%;
+    align-items: center;
+
+    
+}
+
+.slider-test{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height:80%;    
+    flex-shrink: 0;
+align-items: center;
+border-radius:5px;
+background-color: #fff;
+}
+
+.slider-test img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100% ;
+    margin-top:-20px;
+   
+    margin-bottom: -20px;
+}
+
+.slider-test h2{
+    margin-top: 50px;
+    padding-top: 50px;
+    color: #fff;
+}
+.slider-test p{
+    width: 90%;
+    text-align: center;
+    font-style: italic;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+/*---MAS CONTENIDO---*/
+.aside img{
+    width:60%;
+    
+}
+
+
+/*---FORMULARIO DE CONTACTO---*/
+.color-form{
+    background: #2b2e4a;;
+}
+
+.contact-form {
+    list-style-type: none;
+}
+
+.contact-form li div {
+    margin-bottom: 2.5em;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 1.4em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 3px solid slategrey;
+    background: #2b2e4a;
+    font-family: 'Roboto', sans-serif;
+    color: lightgrey;
+    font-weight: 700;
+    font-size: 18px;
+    transition: ease-in-out 0.25s;
+}
+
+.contact-form textarea {
+    min-height: 50px;
+    max-height: 500px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    resize: vertical;
+    overflow: hidden;
+}
+
+.contact-form ::-webkit-input-placeholder {
+    font-size: 12px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.contact-form label {
+    font-size: 12px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+    outline: none;
+    resize: none;
+    border-bottom: 3px solid #db4d57;
+}
+
+.contact-form button {
+    color: lightgrey;
+    background: rgba(34, 34, 34, 0.0);
+    border: 3px solid #db4d57;
+    height: 74px;
+    width: 200px;
+    float: right;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: ease-in-out 0.25s;
+    
+}
+
+.contact-form button span {
+    transition: ease-in-out 0.25s;
+}
+
+.contact-form button:hover {
+    background: #db4d57;
+    color: lightgrey;
+}
+
+.contact-form button:hover span {
+    padding-left: 10px;
+    color: white;
+} 
+
+/*---FOOTER---*/
+.ul-footer{
+    color: #fff;
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
